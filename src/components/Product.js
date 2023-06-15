@@ -2,6 +2,7 @@ import React from 'react'
 import productData from '../fackData/productData'
 import {Container, Row, Col} from 'react-bootstrap';
 import ProductItem from './ProductItem';
+import { Link } from 'react-router-dom';
 const Product = () => {
   return (
     <>
@@ -10,12 +11,12 @@ const Product = () => {
                 <Col className='product-item' lg={6}>
                     Top Product
                 </Col>
-                <Col lg={6}>
+                <Col lg={6} className='product-button'>
                     <ul>
-                        <li><a href="">All</a></li>
-                        <li><a href="">Boys Collection</a></li>
-                        <li><a href="">Girl Collection</a></li>
-                        <li><a href="">Shose Collection</a></li>
+                        <li><Link  className="link">All</Link> </li>
+                        <li><Link  className="link">Boys Collection</Link> </li>
+                        <li><Link  className="link">Girl Collection</Link> </li>
+                        <li><Link  className="link">Shose Collection</Link> </li>
                     </ul>
                 </Col>
             </Row>

@@ -6,6 +6,8 @@ import Cart from './components/Cart';
 import CheckOut from './components/CheckOut';
 import { useDispatch, useSelector } from 'react-redux'
 import { total } from './redux/cartSlice';
+import About from './components/About';
+import Contact from './components/Contact';
 
 function App() {
   const dispatch = useDispatch()
@@ -18,6 +20,8 @@ function App() {
     createRoutesFromElements(
       <Route path="/" element={<RootLayout />}>
          <Route index element={<Home />} />
+         <Route path="/about" element={<About/>} />
+         <Route path="/contact" element={<Contact/>} />
          <Route path="/cart" element={<Cart/>} />
          <Route path="/checkout" element={<CheckOut/>} />
       </Route>

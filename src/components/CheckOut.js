@@ -1,4 +1,5 @@
 import React from 'react'
+import banner from '../fackData/bannData';
 import { Col, Container, Row, Form, FloatingLabel } from 'react-bootstrap'
 import {  useDispatch, useSelector } from 'react-redux'
 import { clear } from '../redux/cartSlice'; 
@@ -18,6 +19,7 @@ const CheckOut = () => {
     
   return (
     <>
+    <div className='sub-banner'> <img src={banner.img} alt="" /> </div>
      <Container>
         <Row>
             <Col lg={9}>

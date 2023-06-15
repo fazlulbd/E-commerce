@@ -1,4 +1,5 @@
 import React from 'react'
+import banner from '../fackData/bannData';
 import CartItem from './CartItem'
 import {  useDispatch, useSelector } from 'react-redux'
 import { clear } from '../redux/cartSlice'; 
@@ -22,9 +23,10 @@ const Cart = () => {
     
   return (
     <>
+     <div className='sub-banner'> <img src={banner.img} alt="" /> </div>
     {
         cartItems.length === 0 ? (
-            <Alert  variant="primary" className='text-center'>
+            <Alert  variant="primary" className='text-center empty-cart'>
                <h2>Your cart is empty</h2>
             </Alert>
         ) : (

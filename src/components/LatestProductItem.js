@@ -11,7 +11,7 @@ const LatestProductItem = ({item}) => {
     }
   return (
     <>
-     <Col lg={3} className='mt-4'>
+     <Col lg={3} sm={6} className='mt-4'>
       <Card>
         <Card.Img variant="top" src={img} />
         <Card.Body>

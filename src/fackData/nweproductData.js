@@ -1,5 +1,5 @@
 let newproductData = {
-        id: 1,
+        id: 42,
         title:"New Product",
         name: "Microsoft Surface Pro",
         img: "assets/images/laptop.jpg",

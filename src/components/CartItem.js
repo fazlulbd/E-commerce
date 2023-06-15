@@ -28,7 +28,7 @@ const CartItem = ({cartItem}) => {
         </div>
 
         <div className="col-lg-4 col-md-6 mb-4 mb-lg-0">
-            <div className="d-flex mb-4" style={{width: "180px", marginLeft: "50px"}}>
+            <div className="d-flex mb-4 quantity">
             <button className=" px-3 me-2" onClick={()=>handleDecrement(cartItem)}> - </button>
             <div className="form-outline">
                 <input id="form1" name="quantity" value={quantity} type="number" className="form-control"  onChange={() => null}/>

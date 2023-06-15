@@ -1,6 +1,7 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import featurData from '../fackData/featurData'
+import { Link } from 'react-router-dom'
 const FeaturedProducts = () => {
   return (
     <>
@@ -12,7 +13,7 @@ const FeaturedProducts = () => {
         {
             featurData.map(item =>(
               <Col lg={4} key={item.id}>
-             <div className="featured_items">
+             <div className="featured_items mt-3">
                 <div className="featured_img">
                  <img src={item.img} alt="" />
                 </div>
@@ -20,7 +21,7 @@ const FeaturedProducts = () => {
                 <div className="featured_overley_text">
                     <h3>{item.year}</h3>
                     <h5>{item.name}</h5>
-                    <a href="" className="btn">{item.button1}</a>
+                    <Link className="btn"> {item.button1}</Link>
                 </div>
                 </div>
                 <h6>{item.title}</h6>

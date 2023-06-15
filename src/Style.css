@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+/* ================================================ Manu========================================================== */
 
 .main-manu{
    position: fixed;
@@ -15,6 +16,10 @@
 .mamubar-icon span{
     font-size: 15px;
 }
+.link{
+    text-decoration: none;
+}
+/* ================================================ Banner========================================================== */
 .bann-slider{
     padding: 130px 0;
 }
@@ -65,7 +70,24 @@
     background: #de4644;
     color: black;
 }
-
+/* ================================================ Sub banner ========================================================== */
+.sub-banner{
+    width: 100%;
+    position: relative;
+}
+.sub-banner img{
+    width: 100%;
+}
+.sub-banner::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.48), rgba(0, 0, 0, 0.389));
+}
+/* ================================================ offer ========================================================== */
 .offer {
     background-color:  #f1f1f1;
 }
@@ -99,14 +121,16 @@
 }
 
 .featured-head h3,
-.latest-head h3{
+.latest-head h3,
+.about-head h3{
     position: relative;
     padding-bottom: 15px;
     text-transform: capitalize;
 }
 
 .featured-head h3::after,
-.latest-head h3::after{
+.latest-head h3::after,
+.about-head h3::after{
     position: absolute;
     content: '';
     bottom: 0;
@@ -117,7 +141,8 @@
 }
 
 .featured-head h3::before,
-.latest-head h3::before{
+.latest-head h3::before,
+.about-head h3::before{
     position: absolute;
     content: '';
     bottom: -10px;
@@ -194,7 +219,7 @@
     transform: rotate(-50deg);
     color: #de4644;
 }
-
+/* ================================================ Product ========================================================== */
 .product{
    padding: 70px 0;
 }
@@ -210,7 +235,7 @@
 .product ul li{
     display: inline-block;
 }
-.product ul li a{
+.product ul li .link{
     padding: 25px 20px;
     color: #252525;
     font-size: 16px;
@@ -219,7 +244,7 @@
     position: relative;
     
 }
-.product ul li a::after{
+.product ul li .link::after{
     position: absolute;
     content: '';
     top: 50%;
@@ -239,17 +264,22 @@
     -o-transition: .5s;
    
 }
-.product ul li a:hover::after{
+.product ul li .link:hover::after{
     width: 90%;
 }
-.product ul li:last-child a{
+.product ul li:last-child .link{
     padding-right: 0;
 }
-.product ul li:first-child a:hover::after{
+.product ul li:first-child .link:hover::after{
     width: 75%;
 }
-.product ul li:last-child a:hover::after{
+.product ul li:last-child .link:hover::after{
     width: 100%;
+}
+/* ================================================ Manu========================================================== */
+.quantity{
+    width: 180px;
+    margin-left: 50px;
 }
 .addcart{
     width: 100%;
@@ -345,6 +375,7 @@
     left: 43%;
 }
 
+/* ================================================ Contact ========================================================== */
 .contact {
     background-color: #353535;
     padding: 50px 0;
@@ -449,4 +480,88 @@
     margin-left: 0;
     background-color: #de4644;
     color: #dddddd;
+}
+.contact-icon span{
+    color: #dc3545;
+    padding-right: 10px;
+    font-size: 20px;
+
+}
+.login-link {
+    color: #de4644;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+.empty-cart{
+    margin-top: 30px;
+    margin-bottom: 180px !important;
+}
+
+/* ================================================ About========================================================== */
+.about_box {
+    position: relative;
+}
+
+.about_text {
+    background-color: #020202;
+    position: absolute;
+    left: 74%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #dddddd;
+    padding: 60px 30px;
+}
+
+.about_text p {
+    margin-bottom: 30px;
+}
+
+.about_counter{
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.about_counter_items {
+    padding: 50px 0;
+    color: #dddddd;
+    text-align: center;
+}
+.about_counter_items h2{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+.about_counter_items h6 {
+    text-transform: capitalize;
+}
+.about-head h3::after{
+    left: 44%;
+}
+.about-head h3::before{
+    left: 44%;
+}
+.designer_text {
+    text-align: center;
+    padding: 20px 60px;
+    border: 2px solid #777777;
+    border-top: none;
+    opacity: 0;
+    margin-top: -94px;
+    transition: all linear 0.5s;
+}
+
+.designer_items {
+    transform: translateY(0px);
+    transition: 0.5s;
+}
+
+.designer_items:hover {
+    transform: translateY(-30px);
+}
+
+.designer_items:hover .designer_text {
+    opacity: 1;
+    margin-top: 0px;
+
 }
