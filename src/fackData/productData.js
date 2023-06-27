@@ -1,8 +1,29 @@
-let productData = [
+import women1 from "../assets/images/women1.jpg"
+import women2 from "../assets/images/women2.jpg"
+import women3 from "../assets/images/women3.jpg"
+import women4 from "../assets/images/women4.jpg"
+import man1 from "../assets/images/man1.jpg"
+import man2 from "../assets/images/man2.jpg"
+import man3 from "../assets/images/man3.jpg"
+import man4 from "../assets/images/man4.jpg"
+import child1 from "../assets/images/child1.jpg"
+import child2 from "../assets/images/child2.jpg"
+import child3 from "../assets/images/child3.jpg"
+import child4 from "../assets/images/child4.jpg"
+import accessories1 from '../assets/images/product14.jpg'
+import accessories2 from '../assets/images/product15.jpg'
+import accessories3 from '../assets/images/product16.jpg'
+import accessories4 from '../assets/images/product17.jpg'
+import latest1 from "../assets/images/Apple-iPhone-11-Pro-Max.jpg"
+import latest2 from "../assets/images/Apple-iphone-12-Pro-Max.jpg"
+import latest3 from "../assets/images/Apple-iPhone-13-Pro-Max-image.jpg"
+import latest4 from "../assets/images/Apple-iPhone-14-Pro-Max.jpg"
+import latest5 from "../assets/images/Apple-iPhone-13-Pro-Max-image.jpg"
+export const productData = [
     {
         id: 1,
         name: "Woolen T-Shirt",
-        img: "assets/images/women1.jpg",
+        img: women1,
         rating: 4.5,
         brand: "zara",
         color: ["622060", "1437A9", "FBDADA", "519d04"],
@@ -13,7 +34,7 @@ let productData = [
     {
         id: 2,
         name: "Woolen T-Shirt",
-        img: "assets/images/women2.jpg",
+        img: women2,
         rating: 4.5,
         brand: "zara",
         color: ["622060", "1437A9", "FBDADA", "519d04"],
@@ -24,7 +45,7 @@ let productData = [
     {
         id: 3,
         name: "Woolen T-Shirt",
-        img: "assets/images/women3.jpg",
+        img: women3,
         rating: 4.5,
         brand: "zara",
         color: ["622060", "1437A9", "FBDADA", "519d04"],
@@ -35,7 +56,7 @@ let productData = [
     {
         id: 4,
         name: "Woolen T-Shirt",
-        img: "assets/images/women4.jpg",
+        img: women4,
         rating: 4,
         brand: "zara",
         color: ["622060", "1437A9", "FBDADA", "519d04"],
@@ -46,7 +67,7 @@ let productData = [
     {
         id: 5,
         name: "Mens T-Shirt",
-        img: "assets/images/man1.jpg",
+        img: man1,
         rating: 4.5,
         brand: "Zara",
         color: ["622060", "1437A9", "FBDADA", "519d04"],
@@ -57,7 +78,7 @@ let productData = [
     {
         id: 6,
         name: "Mens Shirt",
-        img: "assets/images/man2.jpg",
+        img: man2,
         rating: 4.5,
         brand: "Zara",
         color: ["622060", "1437A9", "FBDADA", "519d04"],
@@ -68,7 +89,7 @@ let productData = [
     {
         id: 7,
         name: "Formal Shirt",
-        img: "assets/images/man3.jpg",
+        img: man3,
         rating: 4.5,
         brand: "Zara",
         color: ["622060", "1437A9", "FBDADA", "519d04"],
@@ -79,7 +100,7 @@ let productData = [
     {
         id: 8,
         name: "Mens Pant",
-        img: "assets/images/man4.jpg",
+        img: man4,
         rating: 4.5,
         brand: "Zara",
         color: ["622060", "1437A9", "FBDADA", "519d04"],
@@ -90,7 +111,7 @@ let productData = [
     {
         id: 9,
         name: "Baby Dress",
-        img: "assets/images/child1.jpg",
+        img: child1,
         rating: 4.5,
         brand: "Zara",
         color: ["622060", "1437A9", "FBDADA", "519d04"],
@@ -101,7 +122,7 @@ let productData = [
     {
         id: 10,
         name: "Baby Dress",
-        img: "assets/images/child2.jpg",
+        img: child2,
         rating: 4.5,
         brand: "Zara",
         color: ["622060", "1437A9", "FBDADA", "519d04"],
@@ -112,7 +133,7 @@ let productData = [
     {
         id: 11,
         name: "Baby Dress",
-        img: "assets/images/child3.jpg",
+        img: child3,
         rating: 4.5,
         brand: "Zara",
         color: ["622060", "1437A9", "FBDADA", "519d04"],
@@ -123,7 +144,7 @@ let productData = [
     {
         id: 12,
         name: "Baby Dress",
-        img: "assets/images/child4.jpg",
+        img: child4,
         rating: 5,
         brand: "Zara",
         color: ["622060", "1437A9", "FBDADA", "519d04"],
@@ -134,7 +155,7 @@ let productData = [
     {
         id: 13,
         name: "Gold Stainless Steel Case with Sport Band",
-        img: "assets/images/product14.jpg",
+        img: accessories1,
         rating: 5,
         brand: "Apple",
         color: ["622060", "1437A9", "FBDADA", "519d04"],
@@ -145,7 +166,7 @@ let productData = [
     {
         id: 14,
         name: "Midnight Aluminum Case with Sport Band",
-        img: "assets/images/product15.jpg",
+        img: accessories2,
         rating: 4.5,
         brand: "Apple",
         color: ["622060", "1437A9", "FBDADA", "519d04"],
@@ -156,7 +177,7 @@ let productData = [
     {
         id: 15,
         name: "Starlight Aluminum Case with Solo Loop",
-        img: "assets/images/product16.jpg",
+        img: accessories3,
         rating: 4.5,
         brand: "Apple",
         color: ["622060", "1437A9", "FBDADA", "519d04"],
@@ -167,7 +188,7 @@ let productData = [
     {
         id: 16,
         name: "Graphite Stainless Steel Case with Leather Link",
-        img: "assets/images/product17.jpg",
+        img: accessories4,
         rating: 4.5,
         brand: "Apple",
         color: ["622060", "1437A9", "FBDADA", "519d04"],
@@ -175,5 +196,59 @@ let productData = [
         price: 20000,
         feature: false,
     },
+    {
+        id: 17,
+        name: "Apple-iPhone-11-Pro-Max",
+        img: latest1,
+        rating: 4.5,
+        brand: "Apple ",
+        color: ["622060", "1437A9", "FBDADA", "519d04"],
+        sizes:['xs', 's', 'm'],
+        price: 1500, 
+        feature: true,
+    },
+    {
+        id: 18,
+        name: " Apple-iPhone-12-Pro-Max",
+        img: latest2,
+        rating: 4.5,
+        brand: "Apple",
+        color: ["622060", "1437A9", "FBDADA", "519d04"],
+        sizes:['xs', 's', 'm'],
+        price: 1300,
+        feature: true,
+    },
+    {
+        id: 19,
+        name: "Apple-iPhone-13-Pro-Max",
+        img: latest3,
+        rating: 4.5,
+        brand: "Apple",
+        color: ["622060", "1437A9", "FBDADA", "519d04"],
+        sizes:['xs', 's', 'm'],
+        price: 2000,
+        feature: false,
+    },
+    {
+        id: 20,
+        name: "Apple-iPhone-14-Pro-Max",
+        img: latest4,
+        rating: 4,
+        brand: "Apple",
+        color: ["622060", "1437A9", "FBDADA", "519d04"],
+        sizes:['xs', 's', 'm'],
+        price: 3600,
+        feature: false,
+    },
+    {
+        id: 21,
+        name: "Apple-iPhone-14-Pro-Max",
+        img: latest5,
+        rating: 4,
+        brand: "Apple",
+        color: ["622060", "1437A9", "FBDADA", "519d04"],
+        sizes:['xs', 's', 'm'],
+        price: 3600,
+        feature: false,
+    },
 ]
-module.exports = productData;

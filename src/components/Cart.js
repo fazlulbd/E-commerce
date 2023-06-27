@@ -1,5 +1,5 @@
 import React from 'react'
-import banner from '../fackData/bannData';
+import {subBanner} from '../fackData/subBanner'
 import CartItem from './CartItem'
 import {  useDispatch, useSelector } from 'react-redux'
 import { clear } from '../redux/cartSlice'; 
@@ -23,7 +23,9 @@ const Cart = () => {
     
   return (
     <>
-     <div className='sub-banner'> <img src={banner.img} alt="" /> </div>
+    <div className="text-center" style={{background:`linear-gradient(rgba(0, 0, 0, 0.596),rgba(0, 0, 0, 0.596),rgba(0, 0, 0, 0.596)), url(${subBanner.img}) no-repeat center / cover`}}>
+      <h3 className='bann-text'><strong>Shopping cart</strong></h3>
+     </div>
     {
         cartItems.length === 0 ? (
             <Alert  variant="primary" className='text-center empty-cart'>

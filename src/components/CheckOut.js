@@ -1,5 +1,5 @@
 import React from 'react'
-import banner from '../fackData/bannData';
+import {subBanner} from '../fackData/subBanner'
 import { Col, Container, Row, Form, FloatingLabel } from 'react-bootstrap'
 import {  useDispatch, useSelector } from 'react-redux'
 import { clear } from '../redux/cartSlice'; 
@@ -19,7 +19,9 @@ const CheckOut = () => {
     
   return (
     <>
-    <div className='sub-banner'> <img src={banner.img} alt="" /> </div>
+     <div className=" text-center" style={{background:`linear-gradient(rgba(0, 0, 0, 0.596),rgba(0, 0, 0, 0.596),rgba(0, 0, 0, 0.596)), url(${subBanner.img}) no-repeat center / cover`}}>
+      <h3 className='bann-text'><strong>Check Out</strong></h3>
+     </div>
      <Container>
         <Row>
             <Col lg={9}>

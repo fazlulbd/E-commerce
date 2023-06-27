@@ -1,5 +1,5 @@
 import React from 'react'
-import banner from '../fackData/bannData';
+import {subBanner} from '../fackData/subBanner'
 import { Col, Container, Row, Card } from 'react-bootstrap';
 import about from "../fackData/aboutData"
 import counter from '../fackData/aboutCount'
@@ -7,7 +7,9 @@ import designer from '../fackData/aboutDesigner'
 const About = () => {
   return (
     <>
-     <div className='sub-banner'><img src={banner.img} alt="" /></div>
+     <div className="text-center" style={{background:`linear-gradient(rgba(0, 0, 0, 0.596),rgba(0, 0, 0, 0.596),rgba(0, 0, 0, 0.596)), url(${subBanner.img}) no-repeat center / cover`}}>
+      <h3 className='bann-text'><strong>About</strong></h3>
+     </div>
      <Container>
       <Row className='mt-5 about_box'>
         <Col lg={7} md={12} sm={12}>

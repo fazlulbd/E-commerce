@@ -8,6 +8,9 @@ import { useDispatch, useSelector } from 'react-redux'
 import { total } from './redux/cartSlice';
 import About from './components/About';
 import Contact from './components/Contact';
+import SingleProduct from './components/SingleProduct';
+import Registration from './components/Registration';
+import Login from './components/Login';
 
 function App() {
   const dispatch = useDispatch()
@@ -24,6 +27,9 @@ function App() {
          <Route path="/contact" element={<Contact/>} />
          <Route path="/cart" element={<Cart/>} />
          <Route path="/checkout" element={<CheckOut/>} />
+         <Route path="/product/:pid" element={<SingleProduct/>} />
+         <Route path="/registration" element={<Registration/>} />
+         <Route path="/login" element={<Login/>} />
       </Route>
     )
   )

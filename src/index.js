@@ -6,6 +6,8 @@ import './Responsive.css'
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import firebaseConfig from './firebaseConfig';
+
 import { store } from './redux/store'
 import { Provider } from 'react-redux'
 

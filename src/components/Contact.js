@@ -1,12 +1,14 @@
 import React from 'react'
-import banner from '../fackData/bannData';
+import {subBanner} from '../fackData/subBanner'
 import {Form, Button, Container, Row, Col, FloatingLabel } from 'react-bootstrap'
 import { MdLocationOn, MdPhone, MdOutlineMailOutline } from 'react-icons/md';
 import {FiGlobe } from 'react-icons/fi';
 const Contact = () => {
   return (
     <>
-      <div className='sub-banner'> <img src={banner.img} alt="" /> </div>
+      <div className=" text-center" style={{background:`linear-gradient(rgba(0, 0, 0, 0.596),rgba(0, 0, 0, 0.596),rgba(0, 0, 0, 0.596)), url(${subBanner.img}) no-repeat center / cover`}}>
+      <h3 className='bann-text'><strong>Contact us</strong></h3>
+     </div>
       <Container>
         <Row className='mt-5'> 
           <Col lg={8}>

@@ -3,10 +3,11 @@ import {Col, Card, Button, Row} from 'react-bootstrap'
 import { add } from '../redux/cartSlice'
 import { useDispatch } from 'react-redux'
 import ReactStars from "react-rating-stars-component";
+import { Link } from 'react-router-dom';
 
 const ProductItem = ({item}) => {
     const dispatch = useDispatch()
-    const {name, price, img, rating, brand} = item
+    const {name, price, img, rating, brand, id} = item
     const handleCart = (pd)=>{
         dispatch(add(pd))
     }
@@ -14,7 +15,7 @@ const ProductItem = ({item}) => {
     <>
       <Col lg={3} sm={6} className='mt-4'>
       <Card>
-        <Card.Img variant="top" src={img} />
+       <Link to={`/product/${id}`}> <Card.Img variant="top" src={img} /></Link>
         <Card.Body>
           <Row>
             <Col lg={6}>

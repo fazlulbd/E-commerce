@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
 /* ================================================ Manu========================================================== */
-
+.lproduct{
+    width: 90% !important;
+}
 .main-manu{
    position: fixed;
    background: lightgray;
@@ -496,9 +498,15 @@
 .empty-cart{
     margin-top: 30px;
     margin-bottom: 180px !important;
+    
 }
 
 /* ================================================ About========================================================== */
+.bann-text{
+    color: white;
+    text-transform: uppercase;
+    padding: 90px 0;
+}
 .about_box {
     position: relative;
 }
@@ -565,3 +573,67 @@
     margin-top: 0px;
 
 }
+
+/* ================================================ Registration========================================================== */
+.registration-item,
+.login-item{
+    box-shadow: 5px 5px 10px rgb(177, 172, 172);
+    padding: 60px 30px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.registration-item .form-label,
+.login-item .form-label{
+    font-size: 20px;
+    font-weight: 600;
+}
+.registration-item input,
+.login-item input{
+    padding: 15px 10px;
+}
+.registration-item .password,
+.login-item  .password{
+    position: relative;
+}
+.registration-item .password h5,
+.login-item .password h5{
+	position: absolute;
+	top: 44px;
+	right: 18px;
+	font-size: 22px;
+}
+ .errormessage{
+    color: #dc3545;
+}
+.success{
+    font-size: 17px;
+    font-family: 'Raleway', sans-serif;
+}
+/* ================================================ Login ========================================================== */
+
+
+.login-item h3{
+    background: transparent;
+    color: #252525;
+    font-size: 35px;
+    padding: 5px 10px;
+    border: 1px solid gray;
+    display: inline-block;
+    cursor: pointer;
+}
+.login-item span{
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+}
+
+.forgotpassword{
+    color: #de4644;
+    cursor: pointer;
+}
+
+
+
